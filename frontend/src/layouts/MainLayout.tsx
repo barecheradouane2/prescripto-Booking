@@ -1,18 +1,32 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import NavBar from "../components/Navbar";
+import Sidebar from "@/components/Sidebar";
+import { useState } from "react";
+
+
+
 
 
 const MainLayout = () => {
-  return (
-    <>
-      <nav className="bg-gray-800 text-white p-4 flex gap-4">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
 
-      <main className="p-4">
+const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  return (
+    <div className="min-h-screen   md:px-[70px]  lg:px-[150px]" >
+      < NavBar  setIsOpen={setIsOpen}/>
+
+       {
+        isOpen && (
+          <Sidebar setIsOpen={setIsOpen}/>
+        )
+
+       } 
+
+
+      <main className="pt-4">
         <Outlet />
       </main>
-    </>
+    </div>
   );
 }
 

@@ -4,8 +4,11 @@ import DashboardLayout from "../layouts/DashboardLayout";
 
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Doctors from "../pages/doctors"
 
 import DashboardHome from "../pages/dashboard/DashboardHome";
+import Appointment from "../pages/Appointment";
+import Login from "@/pages/Login";
 
 
 export const router = createBrowserRouter([
@@ -21,6 +24,21 @@ export const router = createBrowserRouter([
         path: "about",
         element: <About />,
       },
+      {
+        path: "doctors",
+        element: <Doctors />,
+      },
+      {
+        path: "doctors/:speciality",
+        element: <Doctors />,
+      },
+      {
+        path: "appointment/:id",
+        element: <Appointment />,
+      },{
+        path: "login",
+        element: <Login />,
+      }
     ],
   },
 
