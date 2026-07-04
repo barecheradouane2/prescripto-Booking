@@ -23,6 +23,7 @@ import Pediatricians from '../assets/assets_frontend/Pediatricians.svg'
 
 
 export const role = "patient";
+export const ITEM_PER_PAGE = 10
 
 export const isLoggedIn = false;
 
@@ -310,3 +311,8 @@ export const doctors = [
     };
     phonenumber?: string;
 };
+
+export type SpecialityType = {
+    speciality: string;
+    image: string;
+}

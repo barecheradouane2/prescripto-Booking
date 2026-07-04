@@ -14,7 +14,7 @@ const SpecialitySection = () => {
 
 
   return (
-    <div className='flex flex-col items-center gap-10 p-10 '>
+    <div id="speciality" className='flex flex-col items-center gap-10 p-10 '>
         <div>
             <h1 className='text-3xl font-bold text-center mb-5'>Find by Speciality</h1>
             <p>

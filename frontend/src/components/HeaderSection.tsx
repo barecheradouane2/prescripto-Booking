@@ -1,4 +1,5 @@
 
+
 import { assets } from '../assets/assets_frontend/assets';
 
 
@@ -22,9 +23,14 @@ const HeaderSection = () => {
                 </p>
                 </div>
 
-                <button className="bg-maincolor bg-white cursor-pointer text-black w-[180px] px-4 py-2 rounded-full">
-                    Book Now - 
-                </button>
+                <a
+                  href="#speciality"
+                 className="inline-block bg-white text-black cursor-pointer w-[180px] px-4 py-2 rounded-full text-center"
+                  >
+                Book Now →
+                </a>
+
+                
 
             </div>
 

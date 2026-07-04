@@ -1,7 +1,7 @@
 import {assets} from '../assets/assets_frontend/assets'
 const Footer = () => {
   return (
-    <div className='flex flex-col md:flex-row gap-4 justify-between p-4 '>
+    <div className='flex flex-col md:flex-row gap-4 justify-between p-4 mt-20 '>
        <div className='flex flex-col gap-4 flex-1'>
           <img
             src={assets.logo}
