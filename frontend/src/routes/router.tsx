@@ -10,6 +10,7 @@ import DashboardHome from "../pages/dashboard/DashboardHome";
 
 import Login from "@/pages/Login";
 import DoctorDetail from "@/pages/DoctorDetail";
+import Signup from "@/pages/Signup";
 
 
 export const router = createBrowserRouter([
@@ -39,6 +40,9 @@ export const router = createBrowserRouter([
       },{
         path: "login",
         element: <Login />,
+      },{
+         path: "signup",
+        element: <Signup />,
       }
     ],
   },
