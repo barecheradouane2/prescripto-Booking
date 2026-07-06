@@ -7,7 +7,7 @@ const DoctorItem = ({ item }: { item: DoctorType }) => {
 
    
   return (
-     <div onClick={() => navigate(`/appointment/${item._id}`)} key={item._id} className='flex flex-col border-gray-300 rounded-2xl border-2  gap-2 hover:translate-y-4 transition-transform duration-300'>
+     <div onClick={() => navigate(`/doctorDetail/${item._id}`)} key={item._id} className='flex flex-col border-gray-300 rounded-2xl border-2  gap-2 hover:translate-y-4 transition-transform duration-300'>
        <div className='bg-gray-200  rounded-tr-2xl rounded-tl-2xl cursor-pointer p-2'>
         <img src={item.image} alt={item.name} className='' />
        </div>
