@@ -296,6 +296,53 @@ export const doctors = [
     },
 ]
 
+export const myAppointments = [
+    {
+        _id: 'app1',
+        doctorId: 'doc1',
+        doctor: {
+            _id: 'doc1',
+            name: 'Dr. Richard James',
+            image: doc1,
+            speciality: 'General physician',
+            degree: 'MBBS',
+            experience: '4 Years',
+            about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+            fees: 50,
+            address: {
+                line1: '17th Cross, Richmond',
+                line2: 'Circle, Ring Road, London'
+            },
+            phonenumber: '+44 1234 567890',
+        },
+        date: '2023-08-15',
+        time: '10:00 AM',
+        status: 'Confirmed',
+    },
+    {
+        _id: 'app2',
+        doctorId: 'doc2',
+        doctor: {
+            _id: 'doc2',
+            name: 'Dr. Emily Larson',
+            image: doc2,
+            speciality: 'Gynecologist',
+            degree: 'MBBS',
+            experience: '3 Years',
+            about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+            fees: 60,
+            address: {
+                line1: '27th Cross, Richmond',
+                line2: 'Circle, Ring Road, London'
+            }
+        },
+        
+        date: '2023-08-16',
+        time: '11:00 AM',
+        status: 'Pending',
+    }
+];
+
  export  type DoctorType = {
     _id: string;
     name: string;

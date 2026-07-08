@@ -1,6 +1,14 @@
+import Footer from "@/components/Footer"
+import MyAppointmentsSection from "@/components/MyAppointmentsSection"
+
 const MyAppointments = () => {
   return (
-    <div className=''>MyAppointments</div>
+    <div className=''>
+      <MyAppointmentsSection />
+
+      <Footer />
+      
+    </div>
   )
 }
 

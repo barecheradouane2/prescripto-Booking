@@ -23,7 +23,7 @@ const [isOpen, setIsOpen] = useState<boolean>(false);
        } 
 
 
-      <main className="pt-4">
+      <main className="pt-4 px-2">
         <Outlet />
       </main>
     </div>
