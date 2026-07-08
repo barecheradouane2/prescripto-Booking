@@ -1,7 +1,7 @@
 import {
   CreditCardIcon,
   LogOutIcon,
-  SettingsIcon,
+  
   UserIcon,
 } from "lucide-react"
 
@@ -13,6 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { Link } from "react-router-dom"
 
 export function DropdownMenuIcons() {
   return (
@@ -29,16 +30,13 @@ export function DropdownMenuIcons() {
       <DropdownMenuContent>
         <DropdownMenuItem>
           <UserIcon />
-          Profile
+           <Link to="/my-profile">Profile</Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <CreditCardIcon />
-          Billing
+          <Link to="/my-appointments"> My Appointments</Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
-          <SettingsIcon />
-          Settings
-        </DropdownMenuItem>
+      
         <DropdownMenuSeparator />
         <DropdownMenuItem variant="destructive">
           <LogOutIcon />

@@ -25,7 +25,7 @@ import Pediatricians from '../assets/assets_frontend/Pediatricians.svg'
 export const role = "patient";
 export const ITEM_PER_PAGE = 10
 
-export const isLoggedIn = false;
+export const isLoggedIn = true;
 
 
 

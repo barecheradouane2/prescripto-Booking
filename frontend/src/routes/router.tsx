@@ -5,12 +5,14 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Doctors from "../pages/Doctors"
+import MyProfile from "../pages/MyProfile"
 
 import DashboardHome from "../pages/dashboard/DashboardHome";
 
 import Login from "@/pages/Login";
 import DoctorDetail from "@/pages/DoctorDetail";
 import Signup from "@/pages/Signup";
+import MyAppointments from "@/pages/MyAppointments";
 
 
 export const router = createBrowserRouter([
@@ -43,6 +45,12 @@ export const router = createBrowserRouter([
       },{
          path: "signup",
         element: <Signup />,
+      },{
+        path:"my-profile",
+        element: <MyProfile />
+      },{
+        path:"my-appointments",
+        element: <MyAppointments />
       }
     ],
   },
